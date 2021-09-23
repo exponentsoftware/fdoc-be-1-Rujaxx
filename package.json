@@ -1,0 +1,28 @@
+{
+  "name": "fdoc-be-1-rujaxx",
+  "version": "1.0.0",
+  "description": "## TODO List",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exponentsoftware/fdoc-be-1-Rujaxx.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/exponentsoftware/fdoc-be-1-Rujaxx/issues"
+  },
+  "homepage": "https://github.com/exponentsoftware/fdoc-be-1-Rujaxx#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.7"
+  }
+}
