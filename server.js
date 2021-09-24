@@ -8,7 +8,17 @@ dotenv.config({path: './config/config.env'})
 const connectDB = require('./config/db')
 connectDB();
 
+
+//route files
+const tasks = require('./routes/task')
+
 const app = express();
+
+//body parser
+app.use(express.json())
+
+// Mount routers
+app.use('/api/v1/tasks', tasks);
 
 const PORT = process.env.PORT || 8000;
 
