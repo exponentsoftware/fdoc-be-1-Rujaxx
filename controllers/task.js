@@ -69,7 +69,7 @@ exports.updateTask = asyncHandler(async(req,res,next) => {
 
 
 // @desc      update a task
-// @route     PUT /api/v1/tasks/:id
+// @route     DELETE /api/v1/tasks/:id
 // @access    Public
 exports.deleteTask = asyncHandler(async(req,res,next) => {
     const task = await Task.findByIdAndDelete(req.params.id);

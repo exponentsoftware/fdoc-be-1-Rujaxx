@@ -3,14 +3,17 @@ const mongoose = require('mongoose')
 const TaskSchema = new mongoose.Schema({
     username: {
         type : String,
-        required : [true,'Please add a username']
+        required : [true,'Please add a username'],
+        trim : true
     },
     title: {
         type : String,
-        required : [true,'Please add a title']
+        required : [true,'Please add a title'],
+        trim : true
     },
     desc: {
         type : String,
+        trim : true
     },
     isComplete:{
         type : Boolean,
